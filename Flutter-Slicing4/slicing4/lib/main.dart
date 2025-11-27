@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:slicing4/latihan.dart';
+import 'package:slicing4/latihan01.dart';
 import 'package:slicing4/profile.dart';
 import 'package:slicing4/shop.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: NavigasiBawah(),
+      home: Latihan01(),
     );
   }
 }
