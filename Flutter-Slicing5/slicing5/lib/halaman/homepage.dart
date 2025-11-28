@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:slicing5/decoration/set.dart';
 import 'package:slicing5/komponen/appbar.dart';
 
 class Homepage extends StatelessWidget {
@@ -7,8 +8,14 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.amber,
-      body: SingleChildScrollView(child: Column(children: [AppBar1()])),
+      backgroundColor: ClassName.color3,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            AppBar1()
+            ]
+         )
+       ),
     );
   }
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:slicing5/halaman/homepage.dart';
-import 'package:slicing5/latihan.dart';
 
 void main() {
   runApp(const MyApp());
