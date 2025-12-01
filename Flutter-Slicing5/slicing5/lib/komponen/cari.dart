@@ -23,7 +23,7 @@ class Cari extends StatelessWidget {
               prefixIcon: Icon(Icons.search, size: 20),
             ),
           ),
-        ),
+        ),  
         Container(
           height: 35,
           width: 35,

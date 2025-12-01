@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:slicing5/decoration/set.dart';
 import 'package:slicing5/komponen/cari.dart';
+import 'package:slicing5/komponen/menupoin.dart';
 
 class AppBar1 extends StatelessWidget {
   const AppBar1({super.key});
@@ -96,6 +97,63 @@ class AppBar1 extends StatelessWidget {
                   offset: Offset(1, 2),
                   blurRadius: 3,
                   color: Colors.grey,
+                ),
+              ],
+            ),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [Text("text"), Text("text")],
+                ),
+                SizedBox(height: 10),
+
+                Container(
+                  margin: EdgeInsets.all(15),
+                  padding: EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(color: ClassName.color5, width: 0.8),
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    width: 30,
+                                    height: 30,
+                                    color: Colors.amber,
+                                  ),
+                                  Text("Text"),
+                                ],
+                              ),
+                              SizedBox(height: 5),
+                              Text(
+                                "Tukar A-Poin",
+                                style: TextStyle(fontSize: 10),
+                              ),
+                            ],
+                          ),
+                          Row(
+                            spacing: 20,
+                            children: [
+                              Menupoin(poin: "10", judulpoin: "Voucher"),
+                              Menupoin(poin: "12", judulpoin: "Stamp"),
+                              Menupoin(poin: "9", judulpoin: "Star"),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Divider(),
+                      Row(children: []),
+                    ],
+                  ),
                 ),
               ],
             ),
