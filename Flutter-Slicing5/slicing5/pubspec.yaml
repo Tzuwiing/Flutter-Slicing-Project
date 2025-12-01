@@ -62,6 +62,14 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/f9.png
+    - assets/cardscan.png
+    - assets/dollar.png
+    - assets/favorite.png
+    - assets/product.png
+    - assets/stamp.png
+    - assets/star.png
+    - assets/virgo.png
+    - assets/voucher.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
