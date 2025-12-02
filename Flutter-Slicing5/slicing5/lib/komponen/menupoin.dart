@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Menupoin extends StatelessWidget {
   final String poin;
   final String judulpoin;
-  const Menupoin({super.key, required this.poin, required this.judulpoin});
+  final String gambar;
+  const Menupoin({
+    super.key,
+    required this.poin,
+    required this.judulpoin,
+    required this.gambar,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +24,31 @@ class Menupoin extends StatelessWidget {
             width: 10,
           ),
         ),
+        SizedBox(width: 5),
+
         Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: [Text(poin), Text(judulpoin)],
+          children: [
+            Row(
+              children: [
+                Container(
+                  height: 20,
+                  width: 20,
+                  child: Image(image: AssetImage(gambar)),
+                ),
+                SizedBox(width: 5),
+                Text(
+                  poin,
+                  style: GoogleFonts.poppins(
+                    fontSize: 13,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 5),
+            Text(judulpoin, style: GoogleFonts.poppins(fontSize: 10)),
+          ],
         ),
       ],
     );

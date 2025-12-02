@@ -100,62 +100,155 @@ class AppBar1 extends StatelessWidget {
                 ),
               ],
             ),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [Text("text"), Text("text")],
-                ),
-                SizedBox(height: 10),
-
-                Container(
-                  margin: EdgeInsets.all(15),
-                  padding: EdgeInsets.all(15),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: ClassName.color5, width: 0.8),
-                  ),
-                  child: Column(
+            child: Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Column(
-                            children: [
-                              Row(
-                                children: [
-                                  Container(
-                                    width: 30,
-                                    height: 30,
-                                    color: Colors.amber,
-                                  ),
-                                  Text("Text"),
-                                ],
-                              ),
-                              SizedBox(height: 5),
-                              Text(
-                                "Tukar A-Poin",
-                                style: TextStyle(fontSize: 10),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            spacing: 20,
-                            children: [
-                              Menupoin(poin: "10", judulpoin: "Voucher"),
-                              Menupoin(poin: "12", judulpoin: "Stamp"),
-                              Menupoin(poin: "9", judulpoin: "Star"),
-                            ],
-                          ),
-                        ],
-                      ),
-                      Divider(),
-                      Row(children: []),
+                      Text("Hi Jusuf", style: ClassName.style2),
+                      Text("Newbie", style: ClassName.style3),
                     ],
                   ),
-                ),
-              ],
+                  SizedBox(height: 10),
+
+                  Container(
+                    padding: EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: ClassName.color5, width: 0.8),
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Container(
+                                      width: 20,
+                                      height: 20,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(
+                                            "assets/dollar.png",
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(width: 10),
+                                    Text(
+                                      "3.689",
+                                      style: GoogleFonts.poppins(
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(height: 5),
+                                Text(
+                                  "Tukar A-Poin",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 8,
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              spacing: 20,
+                              children: [
+                                Menupoin(
+                                  poin: "10",
+                                  judulpoin: "Voucher",
+                                  gambar: "assets/voucher.png",
+                                ),
+                                Menupoin(
+                                  poin: "12",
+                                  judulpoin: "Stamp",
+                                  gambar: "assets/stamp.png",
+                                ),
+                                Menupoin(
+                                  poin: "9",
+                                  judulpoin: "Star",
+                                  gambar: "assets/star.png",
+                                ),
+                                SizedBox(width: 1),
+                              ],
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 5),
+                        Divider(color: ClassName.color2, thickness: 1),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                          children: [
+                            Container(
+                              height: 15,
+                              width: 15,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  image: AssetImage("assets/virgo.png"),
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Text(
+                              "Hubungkan Virgo",
+                              style: GoogleFonts.poppins(
+                                fontSize: 10,
+                                color: ClassName.color2,
+                              ),
+                            ),
+                            SizedBox(width: 5),
+                            Icon(Icons.arrow_forward_ios, size: 10),
+                            Spacer(),
+
+                            Container(
+                              padding: EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                border: Border.all(
+                                  color: Colors.grey.withOpacity(0.5),
+                                  width: 0.8,
+                                ),
+                              ),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 13,
+                                    width: 30,
+                                    decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                        image: AssetImage("assets/barcode.png"),
+                                      ),
+                                    ),
+                                  ),
+
+                                  Text(
+                                    "Barcode Member",
+                                    style: GoogleFonts.poppins(
+                                      fontSize: 8,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.blue[900],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
