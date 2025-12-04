@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:slicing5/decoration/set.dart';
 import 'package:slicing5/komponen/cari.dart';
-import 'package:slicing5/komponen/menupoin.dart';
+import 'package:slicing5/komponenkecil/menupoin.dart';
 
 class AppBar1 extends StatelessWidget {
   const AppBar1({super.key});

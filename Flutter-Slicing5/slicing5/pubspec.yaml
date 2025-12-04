@@ -72,6 +72,11 @@ flutter:
     - assets/banner-15.png
     - assets/banner-16.png
     - assets/banner-17.png
+    - assets/bonuspoin.png
+    - assets/debit.png
+    - assets/giftcard.png
+    - assets/kalzat.png
+    - assets/produkon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

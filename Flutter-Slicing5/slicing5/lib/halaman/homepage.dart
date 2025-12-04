@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:slicing5/decoration/set.dart';
+import 'package:slicing5/komponen/flashsale.dart';
+import 'package:slicing5/komponen/iklanbanner.dart';
 import 'package:slicing5/komponen/appbar.dart';
+import 'package:slicing5/komponen/menupromo.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -15,17 +19,11 @@ class Homepage extends StatelessWidget {
             children: [
               AppBar1(),
               SizedBox(height: 70),
-              SizedBox(
-                height: 180,
-
-                child: PageView(
-                  children: [
-                    Image.asset("assets/banner-15.png", fit: BoxFit.cover),
-                    Image.asset("assets/banner-16.png", fit: BoxFit.cover),
-                    Image.asset("assets/banner-17.png", fit: BoxFit.cover),
-                  ],
-                ),
-              ),
+              IklanBanner(),
+              SizedBox(height: 5),
+              MenuPromo(),
+              SizedBox(height: 10,),
+              FlashSale()
             ],
           ),
         ),
