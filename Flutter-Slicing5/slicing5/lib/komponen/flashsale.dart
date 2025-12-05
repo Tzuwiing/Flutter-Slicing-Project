@@ -33,17 +33,17 @@ class FlashSale extends StatelessWidget {
                 KotakFlash(
                   productName: "Burger Instan merek Terbaik 500 gram",
                   price: "Rp. 20.000",
-                  imageAsset: "assets/giftcard.png",
+                  imageAsset: "assets/burger.png",
                 ),
                 KotakFlash(
                   productName: "Nugget Ayam Premium 250 gram",
                   price: "Rp. 15.500",
-                  imageAsset: "assets/giftcard.png",
+                  imageAsset: "assets/nuget.png",
                 ),
                 KotakFlash(
                   productName: "Sosis Sapi Jumbo Pack Ekonomis",
                   price: "Rp. 35.000",
-                  imageAsset: "assets/giftcard.png",
+                  imageAsset: "assets/sosis.png",
                 ),
               ],
             ),

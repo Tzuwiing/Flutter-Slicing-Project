@@ -77,6 +77,9 @@ flutter:
     - assets/giftcard.png
     - assets/kalzat.png
     - assets/produkon.png
+    - assets/burger.png
+    - assets/nuget.png
+    - assets/sosis.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
